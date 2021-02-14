@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+    <style>
+        my-element {
+            --primary-color: blue;
+            --heading-primary: 42px;
+        }
+
+        .first {
+            --primary-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <my-element class="first">
+        <span slot="title">I'm title 1 </span>
+        <span slot="text">Lorem ipsum jeje</span>
+    </my-element>
+    <my-element>
+        <span slot="title">I'm title 2</span>
+        <span slot="text">Lorem ipsum jeje</span>
+    </my-element>
+    <my-element>
+        <span slot="title">I'm title 3</span>
+        <span slot="text">Lorem ipsum jeje</span>
+    </my-element>
+    <script type="module" src="./my-element.js"></script>
+</body>
+
+</html>
